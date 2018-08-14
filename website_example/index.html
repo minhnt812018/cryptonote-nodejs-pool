@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-76751715-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-76751715-1');
+	</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="fragment" content="!">
+    <meta name="keywords" content="Electroneum, XXX mining pool,XXX pool, etn coin,XXX bitcointalk, Electroneum coin, Electroneum pool, Electroneummining pool"> 
+    <meta name="description" content="Easyhash.pro Electroneum (ETN) Mining Pool, stable mining services with very low fees">
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />  
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
 
-    <title>Cryptonote Mining Pool</title>
+    <link rel="shortcut icon" href="/images/XXX.png" type="image/png">
+    <title>Electroneum (ETN) Mining Pool</title>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.3/jquery.timeago.min.js"></script>
@@ -14,7 +33,7 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="themes/default.css" rel="stylesheet">
-    <link href="themes/custom.css" rel="stylesheet">
+    <link href="../exchange.css" rel="stylesheet">
 </head>
 <body>
 
@@ -22,37 +41,51 @@
 
     <!-- Navigation -->
     <div class="nav-side-menu">
-        <div class="brand"><a href="/"><span id="coinSymbol"></span> <span tkey="miningPool">Mining Pool</span></a></div>
+        <div class="brand"> <a href="/"><img src="/images/XXX.png"><span id="coinSymbol"></span> <span tkey="miningPool"></span> </a></div>
         <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>  
         <div class="menu-list">
             <ul id="menu-content" class="menu-content collapsed out">
         
                 <li><a class="hot_link" data-page="home.html" href="#">
-                    <i class="fa fa-home"></i> <span tkey="dashboard">Dashboard</span>
+                    <i class="fa fa-home"></i> Dashboard
+                </a></li>
+
+		<div id="b-placeholder">
+
+		</div>
+
+     		<li class="dropdown"><a <span="" href="#" data-toggle="dropdown"><i class="fa fa-exchange"></i> Exchange <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+	                   <li><a href="https://altex.exchange/markets&pair=BTC_ETN" target="_blank"><i style="color:#F8F8FF" class="fa fa-exchange"></i>&nbsp;<span style="color:#F8F8FF">Altex.exchange</span></a></li>
+			   <li><a href="https://www.kucoin.com/#/trade.pro/ETN-BTC" target="_blank"><i style="color:#F8F8FF" class="fa fa-exchange"></i>&nbsp;<span style="color:#F8F8FF">Kucoin</span></a></li>
+    			   <li><a href="https://www.cryptopia.co.nz/Exchange/?market=ETN_BTC" target="_blank"><i style="color:#F8F8FF" class="fa fa-exchange"></i>&nbsp;<span style="color:#F8F8FF">Cryptopia</span></a></li>
+			   <li><a href="https://tradeogre.com/exchange/BTC-ETN" target="_blank"><i style="color:#F8F8FF" class="fa fa-exchange"></i>&nbsp;<span style="color:#F8F8FF">Tradeogre</span></a></li>
+                 	</ul>
+     		</li>
+
+        
+                <li><a class="hot_link" data-page="getting_started.html" href="#getting_started">
+                    <i class="fa fa-rocket"></i> Getting Started
                 </a></li>
 
                 <li><a class="hot_link" data-page="worker_stats.html" href="#worker_stats">
-                    <i class="fa fa-dashboard"></i> <span tkey="yourStats">Worker Statistics</span>
-                </a></li>
-
-                <li><a class="hot_link" data-page="getting_started.html" href="#getting_started">
-                    <i class="fa fa-rocket"></i> <span tkey="gettingStarted">Getting Started</span>
+                    <i class="fa fa-dashboard"></i> Worker Statistics
                 </a></li>
 
                 <li><a class="hot_link" data-page="pool_blocks.html" href="#pool_blocks">
-                    <i class="fa fa-cubes"></i> <span tkey="poolBlocks">Pool Blocks</span>
+                    <i class="fa fa-cubes"></i> Pool Blocks
                 </a></li>
 
                 <li><a class="hot_link" data-page="payments.html" href="#payments">
-                    <i class="fa fa-money"></i> <span tkey="payments">Payments</span>
+                    <i class="fa fa-money"></i> Payments
                 </a></li>            
 
                 <li><a class="hot_link" data-page="top10miners.html" href="#top10miners">
-                    <i class="fa fa-trophy"></i> <span tkey="top10miners">Top 10 miners</span>
+                    <i class="fa fa-trophy"></i> Top 10 miners
                 </a></li>
 
                 <li><a class="hot_link" data-page="market.html" href="#market">
-                    <i class="fa fa-bank"></i> <span tkey="market">Market / Calculator</span>
+                    <i class="fa fa-bank"></i> Market
                 </a></li>
 
                 <li><a class="hot_link" data-page="settings.html" href="#settings">
@@ -63,6 +96,12 @@
                     <i class="fa fa-comments"></i> <span tkey="faq">FAQ</span>
                 </a></li>
 
+     		<li class="dropdown"><a <span="" href="#" data-toggle="dropdown"><i class="fa fa-comments-o"></i> Telegram group <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+	                   <li><a href="https://t.me/easyhashpro" target="_blank"><i style="color:#F8F8FF" class="fa fa-comments-o"></i>&nbsp;<span style="color:#F8F8FF">Vietnamese</span></a></li>
+	                   <li><a href="https://t.me/easyhashpro_eng" target="_blank"><i style="color:#F8F8FF" class="fa fa-comments-o"></i>&nbsp;<span style="color:#F8F8FF">English</span></a></li>
+                 	</ul>
+     		</li>
             </ul>
         </div>
 	
@@ -76,7 +115,21 @@
         <div id="section"><span id="statsUpdated"><span tkey="statsUpdated">Stats Updated</span> &nbsp;<i class="fa fa-bolt"></i></span></div>
 	<div id="langSelector"></div>
     </div>
-    
+
+    <!-- Page content
+    <div id="page-wrapper">
+		<h3>Noticeboard</span></h3>
+  		<div>
+			<p>- Pool getting DDoS, please set backup pool in your miner config to prevent downtime or pm me for new connection pool</p>
+			<p>- Some time all your share rejected by pool because we mining zero block, this is bug in etn daemon, they will have new update  soon</p>
+	
+		</div>
+		</br>
+
+    		<div id="page"></div>
+        		<p id="loading" class="text-center"><i class="fa fa-circle-o-notch fa-spin"></i></p>
+    		</div>  
+    </div> -->
     <!-- Page content -->
     <div id="page-wrapper">
         <div id="page"></div>
@@ -88,9 +141,6 @@
 <!-- Footer -->
 <footer>
     <div class="text-muted">
-        <span tkey="poweredBy">Powered by</span> <a target="_blank" href="https://github.com/dvandal/cryptonote-nodejs-pool"><i class="fa fa-github"></i> cryptonote-nodejs-pool</a>
-        <span id="poolVersion"></span>
-        <span class="hidden-xs"><span tkey="openSource">open sourced under the</span> <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPL</a></span>
     </div>
 </footer>
 
@@ -98,7 +148,7 @@
 <script src="config.js"></script>
 <script src="lang/languages.js"></script>
 <script src="js/common.js"></script>
-<script src="js/custom.js"></script>
+<script src="../custom.js"></script>
 <script>
 // Store last pool statistics
 var lastStats;
