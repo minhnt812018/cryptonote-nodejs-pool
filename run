@@ -1,0 +1,5 @@
+#!/bin/bash
+forever start init.js -config=b2b.json -module=api
+forever start init.js -config=b2b.json -module=unlocker
+forever start init.js -config=b2b.json -module=payments
+forever start init.js -config=b2b.json -module=chartsDataCollector
