@@ -39,6 +39,20 @@
             </div>
         </div>
     </div>
+
+    <!-- Average Reward -->
+    <div class="col-lg-3 col-sm-4">
+        <div class="infoBox hoverExpandEffect">
+            <div class="icon">
+                <span class="fa fa-line-chart"></span>
+            </div>
+            <div class="content">
+                <div class="text"><span tkey="averagereward">Average Rewards 100 blocks</span></div>
+                <div class="value"><span id="averagereward">N/A</span></div>
+            </div>
+        </div>
+    </div>
+
     
 </div>
 
@@ -98,6 +112,7 @@ currentPage = {
         updateText('blocksMaturityCount', lastStats.config.depth.toString());
 
         $('#averageLuck').html(formatLuck(lastStats.pool.totalDiff, lastStats.pool.totalShares));
+	$('#averagereward').html(lastStats.pool.avgreward);
 
         if (lastStats.charts.blocks) {
             generateChart(lastStats.charts.blocks);
